@@ -14,7 +14,7 @@ class TicTac
      * @param array $map
      * @return $this
      */
-    public function setMap(array $map): static
+    public function setMap(array $map)
     {
         $this->map = $map;
         return $this;
@@ -78,7 +78,7 @@ class TicTac
      * @param int $j
      * @return $this
      */
-    public function putCross(int $i, int $j): static
+    public function putCross(int $i, int $j)
     {
         if ($this->checkAccess($i, $j)) {
             $this->map[$i][$j] = "X";
@@ -91,7 +91,7 @@ class TicTac
      * @param int $j
      * @return $this
      */
-    public function putZero(int $i, int $j): static
+    public function putZero(int $i, int $j)
     {
         if ($this->checkAccess($i, $j)) {
             $this->map[$i][$j] = "O";

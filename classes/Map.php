@@ -10,7 +10,7 @@ class Map
         $this->setMap($map);
     }
 
-    public function setMap(array $map): static
+    public function setMap(array $map)
     {
         $this->map = $map;
         return $this;
